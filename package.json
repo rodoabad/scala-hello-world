@@ -1,0 +1,27 @@
+{
+  "name": "generator-rodoabad",
+  "version": "0.0.0",
+  "description": "Yeoman generator for my personal projects.",
+  "main": "",
+  "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodoabad/generator-rodoabad.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Rodo Abad <rodoabad@gmail.com> (https://github.com/rodoabad)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodoabad/generator-rodoabad/issues"
+  },
+  "homepage": "https://github.com/rodoabad/generator-rodoabad#readme",
+  "dependencies": {
+    "@commitlint/cli": "^6.2.0",
+    "@commitlint/config-conventional": "^6.1.3",
+    "yeoman-generator": "^2.0.5"
+  }
+}
