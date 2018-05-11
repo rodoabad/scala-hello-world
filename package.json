@@ -2,7 +2,9 @@
   "name": "generator-rodoabad",
   "version": "0.0.0",
   "description": "Yeoman generator for my personal projects.",
-  "main": "",
+  "files": [
+    "generators"
+  ],
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS"
   },
@@ -25,6 +27,8 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^6.2.0",
-    "@commitlint/config-conventional": "^6.1.3"
+    "@commitlint/config-conventional": "^6.1.3",
+    "jest": "^22.4.3",
+    "yeoman-test": "^1.7.1"
   }
 }
