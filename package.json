@@ -11,6 +11,7 @@
     "url": "git+https://github.com/rodoabad/generator-rodoabad.git"
   },
   "keywords": [
+    "rodoabad",
     "yeoman-generator"
   ],
   "author": "Rodo Abad <rodoabad@gmail.com> (https://github.com/rodoabad)",
