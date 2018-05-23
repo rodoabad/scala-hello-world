@@ -3,7 +3,8 @@ module.exports = {
     collectCoverage: true,
     collectCoverageFrom: [
         'generators/**/*.js',
-        '!**/node_modules/**'
+        '!**/node_modules/**',
+        '!**/.*'
     ],
     coverageReporters: [
         'text'
