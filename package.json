@@ -1,17 +1,19 @@
 {
   "name": "generator-rodoabad",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "Yeoman generator for my personal projects",
   "files": [
     "generators"
   ],
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "lint": "eslint generators/**"
+    "lint": "eslint generators/**",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rodoabad/generator-rodoabad.git"
+    "url": "https://github.com/rodoabad/generator-rodoabad.git"
   },
   "keywords": [
     "rodoabad",
@@ -34,6 +36,7 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^1.7.1"
+    "yeoman-test": "^1.7.1",
+    "semantic-release": "^15.4.1"
   }
 }
