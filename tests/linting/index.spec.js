@@ -24,7 +24,7 @@ describe('Linting Generator', () => {
     ];
 
     assert.jsonFileContent('package.json', expectedUpdatedPackageJson);
-    // assert.file(expectedNewDotFiles);
+    assert.file(expectedNewDotFiles);
   });
 
   test('add JS linting', () => {
