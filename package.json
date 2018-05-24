@@ -9,7 +9,7 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint generators/**",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "npm run lint && jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
