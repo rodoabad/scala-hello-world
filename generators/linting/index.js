@@ -21,9 +21,17 @@ module.exports = class extends Generator {
 
   writing() {
 
-    this.fs.copy(
-      this.templatePath('dotfiles/.*'),
-      this.destinationRoot()
+console.log(this.templatePath('_commitlintrc_json'));
+
+
+    this.fs.copyTpl(
+      this.templatePath('dotfiles/_commitlintrc_json'),
+      this.destinationPath('.commitlintrc.json')
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('dotfiles/_eslintrc_js'),
+      this.destinationPath('.eslintrc.js')
     );
 
     this.fs.extendJSON(this.destinationPath('package.json'), updatedPackageJson);
