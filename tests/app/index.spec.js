@@ -2,11 +2,24 @@ const assert = require('yeoman-assert');
 const { generators } = require('yeoman-generator');
 const helpers = require('yeoman-test');
 const path = require('path');
+const rimraf = require('rimraf');
 
 describe('Generator', () => {
-  beforeEach(async () => {
+  const tempFolder = path.join(__dirname, 'tmp');
 
-    await helpers.run(path.join(__dirname, '../../generators/app'));
+  console.log(tempFolder);
+
+  beforeEach(async () => {
+    await helpers.run(path.join(__dirname, '../../generators/app'))
+      .inDir(tempFolder);
+  });
+
+  afterEach(() => {
+    rimraf.sync(`${tempFolder}/**/*`, {
+      glob: {
+        dot: true
+      }
+    });
   });
 
   test('add git dot files', () => {

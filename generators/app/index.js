@@ -10,23 +10,23 @@ module.exports = class extends Generator {
 
   writing() {
 
-    this.fs.copyTpl(
-      this.templatePath('dotfiles/_editorconfig'),
+    this.fs.copy(
+      this.templatePath('dotfiles/.editorconfig'),
       this.destinationPath('.editorconfig')
     );
 
-    this.fs.copyTpl(
-      this.templatePath('dotfiles/_gitattributes'),
+    this.fs.copy(
+      this.templatePath('dotfiles/.gitattributes'),
       this.destinationPath('.gitattributes')
     );
 
-    this.fs.copyTpl(
-      this.templatePath('dotfiles/_gitignore'),
+    this.fs.copy(
+      this.templatePath('dotfiles/.gitignore'),
       this.destinationPath('.gitignore')
     );
 
-    this.fs.copyTpl(
-      this.templatePath('dotfiles/_nvmrc'),
+    this.fs.copy(
+      this.templatePath('dotfiles/.nvmrc'),
       this.destinationPath('.nvmrc')
     );
 

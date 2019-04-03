@@ -1,3 +1,6 @@
 module.exports = {
-  extends: 'rodoabad'
+  extends: 'rodoabad',
+  rules: {
+    'padded-blocks': 'off'
+  }
 }

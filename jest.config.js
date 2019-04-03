@@ -1,5 +1,5 @@
 module.exports = {
-    bail: true,
+    bail: false,
     collectCoverage: true,
     collectCoverageFrom: [
         'generators/**/*.js',
