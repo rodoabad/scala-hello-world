@@ -32,7 +32,7 @@ describe('Linting Generator', () => {
     };
 
     const expectedNewDotFiles = [
-      '.commitlintrc.json',
+      `${tempFolder}/.commitlintrc.json`,
     ];
 
     assert.jsonFileContent(`${tempFolder}/package.json`, expectedUpdatedPackageJson);
@@ -48,7 +48,7 @@ describe('Linting Generator', () => {
     };
 
     const expectedNewDotFiles = [
-      '.eslintrc.js'
+      `${tempFolder}/.eslintrc.js`
     ];
 
     assert.jsonFileContent(`${tempFolder}/package.json`, expectedUpdatedPackageJson);

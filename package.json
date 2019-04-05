@@ -6,9 +6,7 @@
     "generators"
   ],
   "scripts": {
-    "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint generators/**",
-    "semantic-release": "semantic-release",
     "test": "jest"
   },
   "repository": {

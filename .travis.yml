@@ -1,15 +1,15 @@
 sudo: false
 language: node_js
 cache:
-  yarn: true
   directories:
     - node_modules
 notifications:
   email: false
 node_js:
-  - '8'
+  - 8'
+  - 10
 after_success:
-  - yarn run semantic-release
+  - npx run semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/

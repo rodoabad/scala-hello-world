@@ -33,7 +33,7 @@ describe('Generator', () => {
 
   test('add editor config', () => {
     const expectedNewDotFiles = [
-      '.editorconfig',
+      `${tempFolder}/.editorconfig`
     ];
 
     assert.file(expectedNewDotFiles);
@@ -41,7 +41,7 @@ describe('Generator', () => {
 
   test('add NVM config for Node JS consistency', () => {
     const expectedNewDotFiles = [
-      '.nvmrc'
+      `${tempFolder}/.nvmrc`
     ];
 
     assert.file(expectedNewDotFiles);
