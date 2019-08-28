@@ -6,7 +6,7 @@ const rimraf = require('rimraf');
 describe('Linting Generator', () => {
   const tempFolder = path.join(__dirname, 'tmp');
 
-  beforeEach(async () => {
+  beforeEach(async() => {
     await helpers.run(path.join(__dirname, '../../generators/linting'))
       .inDir(tempFolder);
   });
@@ -22,8 +22,8 @@ describe('Linting Generator', () => {
   test('add commit linting', () => {
     const expectedUpdatedPackageJson = {
       devDependencies: {
-        '@commitlint/cli': '^6.2.0',
-        '@commitlint/config-conventional': '^6.1.3',
+        '@commitlint/cli': '^8.1.0',
+        '@commitlint/config-conventional': '^8.1.0',
         husky: '^0.14.3'
       },
       scripts: {
@@ -32,7 +32,7 @@ describe('Linting Generator', () => {
     };
 
     const expectedNewDotFiles = [
-      `${tempFolder}/.commitlintrc.json`,
+      `${tempFolder}/.commitlintrc.json`
     ];
 
     assert.jsonFileContent(`${tempFolder}/package.json`, expectedUpdatedPackageJson);

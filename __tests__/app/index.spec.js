@@ -1,5 +1,4 @@
 const assert = require('yeoman-assert');
-const { generators } = require('yeoman-generator');
 const helpers = require('yeoman-test');
 const path = require('path');
 const rimraf = require('rimraf');
@@ -7,9 +6,7 @@ const rimraf = require('rimraf');
 describe('Generator', () => {
   const tempFolder = path.join(__dirname, 'tmp');
 
-  console.log(tempFolder);
-
-  beforeEach(async () => {
+  beforeEach(async() => {
     await helpers.run(path.join(__dirname, '../../generators/app'))
       .inDir(tempFolder);
   });

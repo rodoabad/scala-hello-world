@@ -1,8 +1,8 @@
 const Generator = require('yeoman-generator');
 
 const devDependencies = {
-  '@commitlint/cli': '^6.2.0',
-  '@commitlint/config-conventional': '^6.1.3',
+  '@commitlint/cli': '^8.1.0',
+  '@commitlint/config-conventional': '^8.1.0',
   eslint: '^4.19.1',
   'eslint-config-rodoabad': '^2.0.0',
   husky: '^0.14.3'
