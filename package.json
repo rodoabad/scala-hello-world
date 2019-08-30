@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/rodoabad/generator-rodoabad#readme",
   "dependencies": {
-    "yeoman-generator": "^3.2.0"
+    "yeoman-generator": "^4.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
@@ -36,6 +36,6 @@
     "rimraf": "^3.0.0",
     "semantic-release": "^15.13.3",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^1.9.1"
+    "yeoman-test": "^2.0.0"
   }
 }
